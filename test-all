@@ -1,0 +1,36 @@
+#!/bin/sh
+
+# Launches all available test suites. Takes as argument the lorg executable
+# file path.
+#
+# The goal of this file is to automatically check all the test suites and to
+# display the failed one. In this folder where this script is, all folders
+# should be test suites.
+
+. "$(dirname $0)/lib.sh"
+
+# Check if the arguments are correct
+if [ $# -ne 1 ]; then
+    echo "Usage:"
+    echo "  test-all LORG_PATH"
+    exit $ERROR_TEST
+fi
+
+lorg_relative_filepath="$1"
+
+# Get the lorg executable full path. Must be done before doing any `cd`.
+lorg_fullpath="$(get_full_path "$lorg_relative_filepath")"
+
+cd "$(dirname $0)"
+
+for f in *; do
+    if [ -d "$f" ]; then
+        ./test-one "$lorg_fullpath" "$f" > /dev/null
+        exit_code="$?"
+        if [ $exit_code -eq $ERROR_TEST ]; then
+            printf "FAIL: \"%s\" test suite is ill-formed.\n" "$f"
+        elif [ $exit_code -ne 0 ]; then
+            printf "FAIL: \"%s\" test suite does not return the expected result.\n" "$f"
+        fi
+    fi
+done

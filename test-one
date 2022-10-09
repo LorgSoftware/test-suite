@@ -1,0 +1,86 @@
+#!/bin/sh
+
+# Launches one test suite. Takes as arguments the path to the Lorg executable
+# then the folder containing the test suite.
+#
+# The goal of this script is to display to the user the difference between the
+# expected result (stated in the expected file) from the command (stated in the
+# command file) and the actual result. Most of the time, the user should use
+# the script "test-all" to test everything and then checking the single one
+# failed test suites using this script manually.
+
+. "$(dirname $0)/lib.sh"
+
+# Check if the arguments are correct
+if [ $# -ne 2 ]; then
+    echo "Usage:"
+    echo "  test-one LORG_PATH TEST_SUITE_FOLDER"
+    exit $ERROR_TEST
+fi
+
+lorg_relative_filepath="$1"
+folder="$2"
+command_file="command"
+expected_file="expected.txt"
+input_file="input.lorg"
+
+# Check if lorg executable exists
+if [ ! -x "$lorg_relative_filepath" ]; then
+    printf "%s is not an executable file.\n" "$lorg_filepath"
+    exit $ERROR_TEST
+fi
+
+# Get the lorg executable full path. Must be done before doing any `cd`.
+lorg_fullpath="$(get_full_path "$lorg_relative_filepath")"
+
+cd "$(dirname $0)"
+
+# Check if test suite directory is a correct existing test suite
+if [ ! -d "$folder" ]; then
+    printf "%s is missing or is not a folder.\n" "$folder"
+    exit $ERROR_TEST
+fi
+if [ ! -f "$folder/$command_file" ]; then
+    printf "%s is missing or is not a regular file in %s.\n" "$command_file" "$folder"
+    exit $ERROR_TEST
+fi
+if [ ! -f "$folder/$expected_file" ]; then
+    printf "%s is missing or is not a regular file in %s.\n" "$expected_file" "$folder"
+    exit $ERROR_TEST
+fi
+if [ ! -f "$folder/$expected_file" ]; then
+    printf "%s is missing or is not a regular file in %s.\n" "$expected_file" "$folder"
+    exit $ERROR_TEST
+fi
+
+cd "$folder"
+
+# Check if the command is correct
+command_content="$(cat "$command_file")"
+if [ "${command_content%% *}" != "lorg" ]; then
+    printf "The command in %s file should start by \"lorg\"\n" "$command_file"
+    exit $ERROR_TEST
+fi
+
+# Do the test
+result_file=$(mktemp)
+trap 'rm "$result_file"; trap - EXIT; exit' EXIT INT HUP TERM
+command_to_do="$(echo "$command_content" | sed "s+^lorg+\"$lorg_fullpath\"+")"
+
+# eval command is often seen as dangerous but this is necessary here.
+# We use the eval command because the command file can contain quoted
+# arguments. When not using the eval command, the quoted arguments are messed
+# up.
+# For example, if the command file contains:
+#    lorg input.lorg --total-name "New total name"
+# The line
+#    $command_to_do > $result_file
+# is replaced by
+#    ../../lorg input.lorg --total-name New total name > /tmp/content-of-result_file
+# We cannot use the line
+#    "$command_to_do" > $result_file
+# because it would be replaced by
+#    '../../lorg input.lorg --total-name "New total name"' > /tmp/content-of-result_file
+# so the shell environment will look for this weird file path.
+eval $command_to_do > $result_file
+diff "$expected_file" "$result_file"
