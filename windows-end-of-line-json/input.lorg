@@ -1,0 +1,8 @@
+Windows users certainly do not want `\r` characters in their node titles, unit
+values. The character `\r` should be ignored completely.
+
+In this file, the line ends with the sequence `\r\n` has Windows does by
+default.
+
+# Title name
+$ Unit name : 10.5
