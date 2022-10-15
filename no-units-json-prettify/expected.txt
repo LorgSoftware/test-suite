@@ -1,0 +1,35 @@
+[
+    {
+        "title": "TOTAL",
+        "children": [
+            {
+                "title": "Backpack",
+                "children": [
+                    {
+                        "title": "Book",
+                        "children": [],
+                        "units": {}
+                    },
+                    {
+                        "title": "Pen",
+                        "children": [],
+                        "units": {}
+                    }
+                ],
+                "units": {}
+            },
+            {
+                "title": "Drawer",
+                "children": [
+                    {
+                        "title": "Ruler",
+                        "children": [],
+                        "units": {}
+                    }
+                ],
+                "units": {}
+            }
+        ],
+        "units": {}
+    }
+]
