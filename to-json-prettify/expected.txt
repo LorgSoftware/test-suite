@@ -1,80 +1,30 @@
 [
     {
-        "title": "TOTAL",
+        "title": "A",
         "children": [
             {
-                "title": "A",
+                "title": "A-A",
                 "children": [
                     {
-                        "title": "A-A",
-                        "children": [
-                            {
-                                "title": "A-A-A",
-                                "children": [],
-                                "units": {
-                                    "Unit": {
-                                        "name": "Unit",
-                                        "value": 1,
-                                        "isReal": true,
-                                        "isIgnored": true
-                                    }
-                                }
-                            },
-                            {
-                                "title": "A-A-B",
-                                "children": [],
-                                "units": {
-                                    "Unit": {
-                                        "name": "Unit",
-                                        "value": 2,
-                                        "isReal": true,
-                                        "isIgnored": true
-                                    }
-                                }
-                            }
-                        ],
+                        "title": "A-A-A",
+                        "children": [],
                         "units": {
                             "Unit": {
                                 "name": "Unit",
-                                "value": 999,
+                                "value": 1,
                                 "isReal": true,
                                 "isIgnored": true
                             }
                         }
                     },
                     {
-                        "title": "A-B",
-                        "children": [
-                            {
-                                "title": "A-B-A",
-                                "children": [],
-                                "units": {
-                                    "Unit": {
-                                        "name": "Unit",
-                                        "value": 3,
-                                        "isReal": true,
-                                        "isIgnored": true
-                                    }
-                                }
-                            },
-                            {
-                                "title": "A-B-B",
-                                "children": [],
-                                "units": {
-                                    "Unit": {
-                                        "name": "Unit",
-                                        "value": 4,
-                                        "isReal": true,
-                                        "isIgnored": true
-                                    }
-                                }
-                            }
-                        ],
+                        "title": "A-A-B",
+                        "children": [],
                         "units": {
                             "Unit": {
                                 "name": "Unit",
-                                "value": 7,
-                                "isReal": false,
+                                "value": 2,
+                                "isReal": true,
                                 "isIgnored": true
                             }
                         }
@@ -83,9 +33,46 @@
                 "units": {
                     "Unit": {
                         "name": "Unit",
-                        "value": 1,
+                        "value": 999,
                         "isReal": true,
-                        "isIgnored": false
+                        "isIgnored": true
+                    }
+                }
+            },
+            {
+                "title": "A-B",
+                "children": [
+                    {
+                        "title": "A-B-A",
+                        "children": [],
+                        "units": {
+                            "Unit": {
+                                "name": "Unit",
+                                "value": 3,
+                                "isReal": true,
+                                "isIgnored": true
+                            }
+                        }
+                    },
+                    {
+                        "title": "A-B-B",
+                        "children": [],
+                        "units": {
+                            "Unit": {
+                                "name": "Unit",
+                                "value": 4,
+                                "isReal": true,
+                                "isIgnored": true
+                            }
+                        }
+                    }
+                ],
+                "units": {
+                    "Unit": {
+                        "name": "Unit",
+                        "value": 7,
+                        "isReal": false,
+                        "isIgnored": true
                     }
                 }
             }
@@ -94,7 +81,7 @@
             "Unit": {
                 "name": "Unit",
                 "value": 1,
-                "isReal": false,
+                "isReal": true,
                 "isIgnored": false
             }
         }

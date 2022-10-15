@@ -1,4 +1,2 @@
-# TOTAL
-  $ Unit with tab	\"says こんにちは: 1979 [Calculated]
-  ## Tab	\"こんにちは
-    $ Unit with tab	\"says こんにちは: 1979
+# Tab	\"こんにちは
+  $ Unit with tab	\"says こんにちは: 1979

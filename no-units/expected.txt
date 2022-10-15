@@ -1,6 +1,5 @@
-# TOTAL
-  ## Backpack
-    ### Book
-    ### Pen
-  ## Drawer
-    ### Ruler
+# Backpack
+  ## Book
+  ## Pen
+# Drawer
+  ## Ruler

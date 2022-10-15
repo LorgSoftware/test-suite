@@ -1,25 +1,12 @@
 [
     {
-        "title": "TOTAL",
-        "children": [
-            {
-                "title": "Tab\t\\\"こんにちは",
-                "children": [],
-                "units": {
-                    "Unit with tab\t\\\"says こんにちは": {
-                        "name": "Unit with tab\t\\\"says こんにちは",
-                        "value": 1979,
-                        "isReal": true,
-                        "isIgnored": false
-                    }
-                }
-            }
-        ],
+        "title": "Tab\t\\\"こんにちは",
+        "children": [],
         "units": {
             "Unit with tab\t\\\"says こんにちは": {
                 "name": "Unit with tab\t\\\"says こんにちは",
                 "value": 1979,
-                "isReal": false,
+                "isReal": true,
                 "isIgnored": false
             }
         }

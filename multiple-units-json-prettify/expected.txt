@@ -1,95 +1,39 @@
 [
     {
-        "title": "TOTAL",
+        "title": "Backpack",
         "children": [
             {
-                "title": "Backpack",
-                "children": [
-                    {
-                        "title": "Book",
-                        "children": [],
-                        "units": {
-                            "Value": {
-                                "name": "Value",
-                                "value": 0.99,
-                                "isReal": true,
-                                "isIgnored": false
-                            },
-                            "Weight": {
-                                "name": "Weight",
-                                "value": 90,
-                                "isReal": true,
-                                "isIgnored": false
-                            }
-                        }
-                    },
-                    {
-                        "title": "Pen",
-                        "children": [],
-                        "units": {
-                            "Value": {
-                                "name": "Value",
-                                "value": 0.99,
-                                "isReal": true,
-                                "isIgnored": false
-                            },
-                            "Weight": {
-                                "name": "Weight",
-                                "value": 5,
-                                "isReal": true,
-                                "isIgnored": false
-                            }
-                        }
-                    }
-                ],
+                "title": "Book",
+                "children": [],
                 "units": {
                     "Value": {
                         "name": "Value",
-                        "value": 1.98,
-                        "isReal": false,
+                        "value": 0.99,
+                        "isReal": true,
                         "isIgnored": false
                     },
                     "Weight": {
                         "name": "Weight",
-                        "value": 95,
-                        "isReal": false,
+                        "value": 90,
+                        "isReal": true,
                         "isIgnored": false
                     }
                 }
             },
             {
-                "title": "Drawer",
-                "children": [
-                    {
-                        "title": "Ruler",
-                        "children": [],
-                        "units": {
-                            "Value": {
-                                "name": "Value",
-                                "value": 2,
-                                "isReal": true,
-                                "isIgnored": false
-                            },
-                            "Weight": {
-                                "name": "Weight",
-                                "value": 50,
-                                "isReal": true,
-                                "isIgnored": false
-                            }
-                        }
-                    }
-                ],
+                "title": "Pen",
+                "children": [],
                 "units": {
                     "Value": {
                         "name": "Value",
-                        "value": 2,
-                        "isReal": false,
+                        "value": 0.99,
+                        "isReal": true,
                         "isIgnored": false
                     },
                     "Weight": {
                         "name": "Weight",
-                        "value": 50,
-                        "isReal": false,
+                        "value": 5,
+                        "isReal": true,
                         "isIgnored": false
                     }
                 }
@@ -98,13 +42,50 @@
         "units": {
             "Value": {
                 "name": "Value",
-                "value": 3.98,
+                "value": 1.98,
                 "isReal": false,
                 "isIgnored": false
             },
             "Weight": {
                 "name": "Weight",
-                "value": 145,
+                "value": 95,
+                "isReal": false,
+                "isIgnored": false
+            }
+        }
+    },
+    {
+        "title": "Drawer",
+        "children": [
+            {
+                "title": "Ruler",
+                "children": [],
+                "units": {
+                    "Value": {
+                        "name": "Value",
+                        "value": 2,
+                        "isReal": true,
+                        "isIgnored": false
+                    },
+                    "Weight": {
+                        "name": "Weight",
+                        "value": 50,
+                        "isReal": true,
+                        "isIgnored": false
+                    }
+                }
+            }
+        ],
+        "units": {
+            "Value": {
+                "name": "Value",
+                "value": 2,
+                "isReal": false,
+                "isIgnored": false
+            },
+            "Weight": {
+                "name": "Weight",
+                "value": 50,
                 "isReal": false,
                 "isIgnored": false
             }
