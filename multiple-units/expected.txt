@@ -1,0 +1,18 @@
+# TOTAL
+  $ Value: 3.98 [Calculated]
+  $ Weight: 145 [Calculated]
+  ## Backpack
+    $ Value: 1.98 [Calculated]
+    $ Weight: 95 [Calculated]
+    ### Book
+      $ Value: 0.99
+      $ Weight: 90
+    ### Pen
+      $ Value: 0.99
+      $ Weight: 5
+  ## Drawer
+    $ Value: 2 [Calculated]
+    $ Weight: 50 [Calculated]
+    ### Ruler
+      $ Value: 2
+      $ Weight: 50
