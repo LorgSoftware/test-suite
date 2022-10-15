@@ -1,0 +1,6 @@
+We put special characters in the node titles and in the unit names. Maybe you
+cannot see those characters (for example tabulation). Be careful if you change
+this file.
+
+# Tab	\"こんにちは
+$ Unit with tab	\"says こんにちは : 1979
