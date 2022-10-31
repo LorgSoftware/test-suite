@@ -1,7 +1,6 @@
 [
     {
         "title": "Tab\t\\\"こんにちは",
-        "children": [],
         "units": {
             "Unit with tab\t\\\"says こんにちは": {
                 "name": "Unit with tab\t\\\"says こんにちは",
@@ -9,6 +8,7 @@
                 "isReal": true,
                 "isIgnored": false
             }
-        }
+        },
+        "children": []
     }
 ]

@@ -1,7 +1,6 @@
 [
     {
         "title": "Title name",
-        "children": [],
         "units": {
             "Unit name": {
                 "name": "Unit name",
@@ -9,6 +8,7 @@
                 "isReal": true,
                 "isIgnored": false
             }
-        }
+        },
+        "children": []
     }
 ]

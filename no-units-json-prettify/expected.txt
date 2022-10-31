@@ -1,29 +1,29 @@
 [
     {
         "title": "Backpack",
+        "units": {},
         "children": [
             {
                 "title": "Book",
-                "children": [],
-                "units": {}
+                "units": {},
+                "children": []
             },
             {
                 "title": "Pen",
-                "children": [],
-                "units": {}
+                "units": {},
+                "children": []
             }
-        ],
-        "units": {}
+        ]
     },
     {
         "title": "Drawer",
+        "units": {},
         "children": [
             {
                 "title": "Ruler",
-                "children": [],
-                "units": {}
+                "units": {},
+                "children": []
             }
-        ],
-        "units": {}
+        ]
     }
 ]
