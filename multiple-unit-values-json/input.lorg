@@ -1,0 +1,7 @@
+Proves that a unit value can be defined multiple times, and the last value is
+considered.
+
+# Title
+
+$ Unit: 1
+$ Unit: 2
