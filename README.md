@@ -35,3 +35,27 @@ To automatize the tests, there are two POSIX shell scripts.
 To summarize, launch `./test-all LORG_FILEPATH` to check if everything is fine
 and `./test-one LORG_FILEPATH FOLDER_NAME` to have more information about one
 test suite.
+
+## License
+
+This project is licensed under the Apache License, Version 2.0. The terms and
+conditions of this license are in the `LICENSE` file.
+
+## Copyright
+
+```
+Lorg - test suite
+Copyright 2023 Alex Canales
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
