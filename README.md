@@ -1,5 +1,9 @@
 # Test suites
 
+_If you are reading this on GitHub or other Git repository or service, then you
+are looking at a mirror. The official repository is [this Fossil
+repository](https://dev.lorg.software/test-suite)._
+
 ## The test suites
 
 The folder `test` contains test suites. Each folder must contain the
